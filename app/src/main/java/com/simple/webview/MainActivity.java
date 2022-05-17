@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mButtonBack;
     private Button mButtonForward;
     private ProgressBar mProgressBar;
-    private String mUrl="https://google.com";
+    private String mUrl="https://www.gosuslugi.ru/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(mContext,"Go To Back",Toast.LENGTH_SHORT).show();
             }
         });
-
         // Set a click listener for forward button
         mButtonForward.setOnClickListener(view -> {
             /*
@@ -171,10 +170,10 @@ public class MainActivity extends AppCompatActivity {
         } });
 
         // Enable the javascript
-        mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setAppCacheEnabled(true);
         mWebView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         mWebView.getSettings().setDomStorageEnabled(true);
+        mWebView.getSettings().setBuiltInZoomControls(true);
         mWebView.getSettings().setDatabaseEnabled(true);
         mWebView.getSettings().setGeolocationEnabled(true);
         mWebView.getSettings().setSupportZoom(true);
@@ -184,18 +183,7 @@ public class MainActivity extends AppCompatActivity {
         // Render the web page
         mWebView.loadUrl(urlToRender);
     }
-
-
-
-    /*
-        public void onBackPressed ()
-            Called when the activity has detected the user's press of the back key. The default
-            implementation simply finishes the current activity, but you can override this to
-            do whatever you want.
-    */
-
-
-    @Override
+@Override
     public void onBackPressed(){
         Toast.makeText(mContext,"Back Key Pressed",Toast.LENGTH_SHORT).show();
         // We also allow to navigate back history by pressing device back key
@@ -206,6 +194,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(mContext,"No Back History Found",Toast.LENGTH_SHORT).show();
             super.onBackPressed();
         }
+    }
+
+    private void shareUrl() {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+        intent.putExtra(Intent.EXTRA_TEXT, "https://www.gosuslugi.ru/");
+        intent.setType("text/plain");
+        startActivity(Intent.createChooser(intent, "Share URL"));
     }
 
     private class ChromeClient extends WebChromeClient {
