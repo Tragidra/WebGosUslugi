@@ -1,0 +1,65 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.simple.webview"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:4:5-79
+12-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:4:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:6:5-67
+13-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:6:22-64
+14
+15    <application
+15-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:7:5-26:19
+16        android:allowBackup="true"
+16-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:8:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.3.1] C:\Users\astra\.gradle\caches\transforms-3\23f81d9fab888a4f50efd6bff87d1a8b\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:9:9-43
+20        android:label="Веб-Браузер"
+20-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:10:9-36
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:11:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:12:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.SimpleWebview" >
+24-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:13:9-51
+25        <activity android:name="com.simple.webview.PageofflineActivity" />
+25-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:14:5-15:46
+25-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:15:9-44
+26        <activity
+26-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:16:5-25:16
+27            android:name="com.simple.webview.MainActivity"
+27-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:17:9-37
+28            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+28-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:18:9-118
+29            android:hardwareAccelerated="true" >
+29-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:19:9-43
+30            <intent-filter>
+30-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:20:9-24:25
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:21:13-65
+31-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:21:21-62
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:23:13-73
+33-->C:\Users\astra\AndroidStudioProjects\simple-webview\app\src\main\AndroidManifest.xml:23:23-70
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

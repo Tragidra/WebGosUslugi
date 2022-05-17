@@ -1,0 +1,13 @@
+com/simple/webview/ConnectionManager.java
+ com.simple.webview.ConnectionManager
+com/simple/webview/BuildConfig.java
+ com.simple.webview.BuildConfig
+com/simple/webview/MainActivity.java
+ com.simple.webview.MainActivity
+ com.simple.webview.MainActivity$1
+ com.simple.webview.MainActivity$2
+ com.simple.webview.MainActivity$3
+ com.simple.webview.MainActivity$ChromeClient
+com/simple/webview/PageofflineActivity.java
+ com.simple.webview.PageofflineActivity
+ com.simple.webview.PageofflineActivity$1
